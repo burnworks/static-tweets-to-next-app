@@ -22,11 +22,13 @@ export default function Page({ tweets }) {
       </div>
       <div className={styles.pageContent}>
         <Tweets.Provider value={tweets}>
-          <Tweet id="1222713456702287873" />
-          <Tweet id="1222714521170481153" />
-          <Tweet id="1278157369038405633" />
-          <Tweet id="1278156968423641088" />
-          <Tweet id="1333671811914018816" caption="media tweet sample" />
+          <Tweet id="1333199675667619842" />
+          <Tweet id="1222713456702287873" caption="Link tweet sample" />
+          <Tweet id="1334659999717441536" caption="Retweet as Quote Tweet sample" />
+          <Tweet id="1334005094392635398" caption="Link(Twitter Card) tweet sample" />
+          <Tweet id="1334704571969536000" caption="Media(image) tweet sample" />
+          <Tweet id="1334067138244481027" />
+          <Tweet id="1311954192076951554" />
         </Tweets.Provider>
       </div>
     </Layout>
