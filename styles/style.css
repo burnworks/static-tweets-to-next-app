@@ -1,0 +1,104 @@
+@import "normalize.css";
+
+:root {
+  --bg-color: rgba(255, 255, 255, 1);
+  --text-color: rgba(18, 18, 18, 1);
+  --link-color: rgba(194, 24, 91, 0.95);
+  --link-hover-color: rgba(194, 24, 91, 1);
+  --link-visited-color: rgba(142, 36, 170, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: rgba(18, 18, 18, 1);
+    --text-color: rgba(255, 255, 255, 0.95);
+    --link-color: rgba(236, 64, 122, 0.95);
+    --link-hover-color: rgba(236, 64, 122, 1);
+    --link-visited-color: rgba(186, 104, 200, 1);
+  }
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", "BIZ UDPGothic", Meiryo, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: none;
+}
+
+:lang(en) {
+  font-kerning: normal;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--link-visited-color);
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  transition-property: color, background-color;
+  transition-duration: 0.1s, 0.4s;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+
+a img {
+  border: none;
+  transition-property: opacity;
+  transition-duration: 0.2s;
+}
+
+a:hover img {
+  opacity: 0.75;
+  transition-property: opacity;
+  transition-duration: 0.4s;
+}
+
+iframe {
+  border: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+input,
+textarea,
+button {
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+[aria-hidden="true"] {
+  speak: none;
+}
