@@ -5,7 +5,7 @@
 必要なものはすべて `/static-tweet` ディレクトリにまとめてあるため、最低限の記述のみで、`<Tweet id="tweet_id" />` という形で埋め込みが可能になります。
 
 なお、ベースとしたソースコードは、`remark-parse@9.0.0` でパーサーが `micromark` に変更されたことで動作しなくなっていましたので、最新の環境に合わせて動作するように改変しています。  
-その他、ブラウザの `prefers-color-scheme` に応じて埋め込みツイートにダークモードテーマが適用されるようにしたりといた、細かい部分で少し手を入れています。
+その他、`prefers-color-scheme` を使用して、ユーザーがテーマをダークモードに設定していた場合、埋め込みツイートにダークモードテーマが適用されるようにしたりといた、細かい部分で少し手を入れています。
 
 ## Demo
 
@@ -29,7 +29,7 @@ For polls, make sure that you have **Tweets and Users** from **Twitter Labs** en
 
 基本的なツイートの埋め込み方法は、`pages/index.js` のソースコードを参考にしてください。
 
-埋め込まれたツイートのデザインは、ブラウザの `prefers-color-scheme` に応じてライトテーマとダークテーマが切り替わるようにしてありますが、ダークテーマに固定したい場合は `static-tweet/components/post/tweet.js` 内の `isDark` に `teue` をセットしてください。
+埋め込まれたツイートのデザインは、CSS の `prefers-color-scheme` に応じてライトテーマとダークテーマが切り替わるようにしてありますが、ダークテーマに固定したい場合は `static-tweet/components/post/tweet.js` 内の `isDark` に `teue` をセットしてください。
 
 ## Special thanks
 
