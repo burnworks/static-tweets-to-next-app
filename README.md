@@ -27,6 +27,10 @@ TWITTER_API_TOKEN=...
 
 For polls, make sure that you have **Tweets and Users** from **Twitter Labs** enabled for your app. It's required to get access to polls metadata.
 
+基本的なツイートの埋め込み方法は、`pages/index.js` のソースコードを参考にしてください。
+
+埋め込まれたツイートのデザインは、ブラウザの `prefers-color-scheme` に応じてライトテーマとダークテーマが切り替わるようにしてありますが、ダークテーマに固定したい場合は `static-tweet/components/post/tweet.js` 内の `isDark` に `teue` をセットしてください。
+
 ## Special thanks
 
 ソースコードは下記の各プロジェクトをもとに、改変して使用させていただきました。
